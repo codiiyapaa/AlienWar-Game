@@ -1,2 +1,2 @@
-# AlienWar-Game
-Alien War Game  using Html and Java script
+# Game: Save the girl from Corona
+Built using Html and Java script
