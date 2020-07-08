@@ -1,0 +1,15 @@
+<html>
+<head>
+	</head>
+	<body>
+		<canvas style="margin-top: 30px; display: block; padding-left: 0; padding-right: 0; margin-left: auto; margin-right: auto;" width="520" height="520"    id="myCanvas">
+		</canvas>
+		<marquee>
+			Developed by Paras Bansal
+		</marquee>
+		<script type="text/javascript">
+			var canvas= document.getElementById('myCanvas');
+			var ctx= canvas.getContext("2D");
+		</script>
+	</body>
+</html>
