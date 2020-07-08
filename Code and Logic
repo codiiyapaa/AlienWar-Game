@@ -7,9 +7,36 @@
 		<marquee>
 			Developed by Paras Bansal
 		</marquee>
+
 		<script type="text/javascript">
 			var canvas= document.getElementById('myCanvas');
-			var ctx= canvas.getContext("2D");
+			var ctx= canvas.getContext("2d");
+
+            var girlImage=new Image();
+
+           girlImage.src="C:/Users/hp/Desktop/alien ware game/resources/girl.png";
+
+           var girl ={};
+           girl.x = 520/2;
+           girl.y = 520/2;
+           girl.width = 100;
+           girl.height = 100;
+           girl.image=  girlImage;
+
+           function drawObject(object)
+           {
+              ctx.drawImage(object.image, object.x, object.y, object.width, object.height);
+           }
+           function update()
+           {
+           	   ctx.fillStyle -"000000";
+			   ctx.fillRect(0,0, 520, 520);
+           	    girl.x++;
+           	    girl.y=girl.y-2;
+               drawObject(girl);
+           }
+           setInterval(update, 100);
+
 		</script>
 	</body>
 </html>
